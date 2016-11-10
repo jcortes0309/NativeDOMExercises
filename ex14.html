@@ -18,7 +18,9 @@
     through document.body.
     */
     document.body.addEventListener("click", function(event) {
-      event.target.textContent = "You clicked";
+      if (event.target.tagName === 'BUTTON') {
+        event.target.textContent = "You clicked";
+      }
     });
     </script>
   </body>
