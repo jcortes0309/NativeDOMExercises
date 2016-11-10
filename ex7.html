@@ -11,8 +11,10 @@
     Add an a element that goes to http://google.com within the #content element by finding that element on the page and setting its innerHTML property.
     */
     var content = document.getElementById("content");
-    var a = document.createElement("a");
+    var a = document.createElement("p");
+    // console.log(a);
     a.innerHTML = "<a href='http://google.com' target='_blank'>Google</a>";
+    console.log(a);
     content.appendChild(a);
     </script>
   </body>
